@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wi-Fi Gratis - CasaDizio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    form {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    input, select {
+      width: 250px;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #e74c3c;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <h2>Conéctate al Wi-Fi de CasaDizio</h2>
+  <p>Completá este formulario y participá en sorteos y promociones exclusivas.</p>
+
+  <form action="#" method="POST" onsubmit="return validarFormulario()">
+    <input type="text" name="nombre" placeholder="Nombre" required><br>
+    <input type="text" name="apellido" placeholder="Apellido" required><br>
+    <select name="genero" required>
+      <option value="" disabled selected>Género</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select><br>
+    <input type="date" name="fecha_nacimiento" required><br>
+    <input type="email" name="correo" placeholder="Correo electrónico" required><br>
+    <label>
+      <input type="checkbox" required> Acepto los Términos y Condiciones
+    </label><br>
+    <input type="submit" value="Conectarse">
+  </form>
+
+  <script>
+    function validarFormulario() {
+      alert("¡Gracias! Estás siendo redirigido...");
+      return true;
+    }
+  </script>
+</body>
+</html>
